@@ -1,0 +1,23 @@
+.WaffleStudioCover {
+  padding: 10px;
+  .title {
+    display: block;
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .roles {
+    h3 {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+      margin: 0;
+    }
+  }
+  .content {
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-align: justify;
+  }
+}
