@@ -8,7 +8,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {  "project": "./tsconfig.json", ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh'],
+  plugins: ['react','react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
     "react/function-component-definition": "error",
