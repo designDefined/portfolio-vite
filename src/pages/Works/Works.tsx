@@ -1,3 +1,9 @@
+import Introduction from "../../components/Works/Introduction/Introduction";
+
 export default function Works() {
-  return <div>project</div>;
+  return (
+    <main>
+      <Introduction />
+    </main>
+  );
 }

@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import RoutexProvider from "./libs/Routex/components/RoutexProvider/RoutexProvider";
 import { RoutexType } from "./libs/Routex/types";
-import Project from "./components/Project/Project";
+import Works from "./pages/Works/Works";
 
 const routex: RoutexType[] = [
   {
     path: "",
     isIndex: true,
-    component: <Project />,
+    component: <Works />,
   },
 ];
 
