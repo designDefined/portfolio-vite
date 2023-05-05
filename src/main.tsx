@@ -1,10 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import RoutexProvider from "./libs/Routex/components/RoutexProvider/RoutexProvider";
+import { RoutexType } from "./libs/Routex/types";
+import Project from "./components/Project/Project";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+const routex: RoutexType[] = [
+  {
+    path: "",
+    isIndex: true,
+    component: <Project />,
+  },
+];
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RoutexProvider provider={routex} />
   </React.StrictMode>,
-)
+);
