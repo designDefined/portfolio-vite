@@ -1,19 +1,27 @@
 import styles from "./Introduction.module.scss";
+import classNames from "classnames/bind";
+
+const cx = classNames.bind(styles);
 
 export default function Introduction() {
   return (
     <div className={styles.Introduction}>
       <div className={styles.Title}>
-        <div>Design</div>
-        <div>Defined's</div>
-        <div>Portfolio</div>
+        <div className={styles.gradient}>Design</div>
+        <div className={styles.gradient}>Defined.by</div>
+        <div className={cx({ gradient: true, box: true })} />
       </div>
-      <div>
-        <div>Frontend Developer</div>
-        <div>who loves</div>
-        <div>Film</div>
-        <div>Design</div>
-        <div>and Writing</div>
+      <div className={styles.Roles}>
+        <div className={styles.intro}>Welcome!</div>
+        <div className={styles.intro}>This is the portfolio of</div>
+        <div className={cx({ role: true, developer: true })}>
+          Frontend Developer{" "}
+        </div>
+        <div className={styles.intro}>as well as,</div>
+        <div className={cx({ role: true, filmmaker: true })}>Filmmaker</div>
+        <div className={cx({ role: true, designer: true })}>Designer</div>
+        <div className={cx({ role: true, writer: true })}>and Writer</div>
+        <div className={styles.intro}>please enjoy!</div>
       </div>
     </div>
   );
