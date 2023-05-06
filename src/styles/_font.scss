@@ -1,3 +1,10 @@
+@mixin background-clip($background) {
+  background: $background;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
 @mixin antique {
   font-family: "Lobster", cursive;
 }

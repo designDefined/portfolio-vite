@@ -32,22 +32,15 @@
       align-self: center;
     }
     .role {
+      @include font.background-clip(
+        linear-gradient(to right, #9f4aff 20%, #66d7ff 50%, #ffc0ff 80%)
+      );
       position: relative;
       font-weight: 800;
       font-size: 32px;
       line-height: 1.8em;
-      background: linear-gradient(
-        to right,
-        #9f4aff 20%,
-        #66d7ff 50%,
-        #ffc0ff 80%
-      );
-      text-decoration: underline;
+
       background-size: 300%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-fill-color: transparent;
       margin-bottom: 4px;
       &::after {
         position: absolute;

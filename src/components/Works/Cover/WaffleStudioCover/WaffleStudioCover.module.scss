@@ -1,13 +1,30 @@
+@use "./src/styles/font";
+@use "./src/styles/animation";
+
+$transition: 1s cubic-bezier(0.04, 0.03, 0.08, 1);
+$waffle-gradient: linear-gradient(to right, #f0745f 20%, #e79854 80%);
+
 .WaffleStudioCover {
   padding: 10px;
   .title {
-    display: block;
-    font-size: 48px;
+    @include font.background-clip($waffle-gradient);
+    @include font.antique;
+    display: inline-block;
+    font-size: 54px;
     margin-top: 10px;
     margin-bottom: 5px;
+    transition: $transition;
+    letter-spacing: 2px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
   }
   .roles {
+    color: #7e473e;
+    transition: $transition;
+    transition-delay: 0.75s;
     h3 {
+      font-weight: 700;
       font-size: 20px;
       letter-spacing: -0.8px;
       margin: 0;
@@ -19,5 +36,25 @@
     font-weight: 300;
     line-height: 1.4em;
     text-align: justify;
+    transition: $transition;
+    transition-delay: 0.75s;
+    opacity: 1;
+  }
+}
+
+.close {
+  .title {
+    background-size: 0;
+    opacity: 0;
+  }
+  .roles {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition-delay: 0s;
+  }
+  .content {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition-delay: 0s;
   }
 }

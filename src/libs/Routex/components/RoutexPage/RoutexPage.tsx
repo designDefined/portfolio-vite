@@ -2,6 +2,7 @@ import styles from "./RoutexPage.module.scss";
 import { ReactNode, useEffect } from "react";
 import { RoutexSide, useRoutex } from "../../hooks/useRoutex";
 import classNames from "classnames/bind";
+import useWaffleScroll from "../../../WaffleScroll/index";
 
 const cx = classNames.bind(styles);
 
