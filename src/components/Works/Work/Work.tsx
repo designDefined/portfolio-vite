@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function Work({ work }: Props) {
-  const { id, tags, cover: Cover, details } = work;
+  const { id, cover: Cover, details } = work;
   return (
     <div id={id} className={styles.Work}>
       <Cover />

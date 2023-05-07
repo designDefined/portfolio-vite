@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import WaffleStudioCover from "../../components/Works/Cover/WaffleStudioCover/WaffleStudioCover";
 import {
   WackathonDetail,
@@ -11,12 +10,12 @@ export type IWorkTypeTag = "Frontend" | "Backend" | "Film" | "Design" | "PM";
 
 export type IWorkDetail = {
   title: string;
-  content: ReactNode;
+  content: () => JSX.Element;
   status: { process: IWorkProcessTag; type: IWorkTypeTag[] };
 };
 export type IWork = {
   id: string;
-  cover: ReactNode;
+  cover: () => JSX.Element;
   details: IWorkDetail[];
   tags: IWorkTypeTag[];
 };
