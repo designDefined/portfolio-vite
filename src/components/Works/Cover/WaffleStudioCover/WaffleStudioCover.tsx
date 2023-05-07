@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 export default function WaffleStudioCover() {
   const { ref, scrollState } = useWaffleScroll<{ open: boolean }>(
-    ({ progress, toggleState }) => {
+    ({ toggleState }) => {
       toggleState(0.8, 3.1, "open");
     },
     { open: false },

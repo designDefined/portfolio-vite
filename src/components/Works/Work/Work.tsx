@@ -1,14 +1,21 @@
-import { WorkData } from "../../../pages/Works/data";
+import styles from "./Work.module.scss";
+import { IWork } from "../../../pages/Works/data";
+import WorkDetail from "../WorkDetail/WorkDetail";
 
 type Props = {
-  work: WorkData;
+  work: IWork;
 };
 
 export default function Work({ work }: Props) {
-  const { cover: Cover } = work;
+  const { id, tags, cover: Cover, details } = work;
   return (
-    <div>
+    <div id={id} className={styles.Work}>
       <Cover />
+      <ul className={styles.detailList}>
+        {details.map((detail) => (
+          <WorkDetail detail={detail} />
+        ))}
+      </ul>
     </div>
   );
 }
