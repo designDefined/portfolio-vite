@@ -38,10 +38,11 @@
   margin-bottom: 16px;
 
   .title {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 700;
     color: #151515;
     transition: 1s ease;
+    cursor: pointer;
   }
   .status {
     @include tagColors;
@@ -50,15 +51,17 @@
     .process,
     .type {
       display: inline-block;
-      font-size: 14px;
-      padding: 2px 8px;
+      font-size: 1em;
+      padding: 0.125em 0.5em;
       margin-right: 4px;
       border-radius: 5px;
     }
     .process {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: 600;
-      font-size: 15px;
-      padding: 0 8px;
+      font-size: 0.875em;
       border: 2px solid;
     }
     .type {
@@ -68,7 +71,7 @@
   .content {
     transition: 1s ease;
     opacity: 1;
-    font-size: 16px;
+    font-size: 1em;
   }
 }
 
@@ -77,6 +80,9 @@
   box-shadow: 1px 3px 5px 0 rgba(black, 0.3);
   .title {
     color: #969696;
+    &:hover {
+      color: black;
+    }
   }
   .content {
     opacity: 0;

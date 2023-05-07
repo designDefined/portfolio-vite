@@ -12,15 +12,20 @@ export default function Introduction() {
         <div className={cx({ gradient: true, box: true })} />
       </div>
       <div className={styles.Roles}>
+        <div className={styles.empty} />
         <div className={styles.intro}>Welcome!</div>
         <div className={styles.intro}>This is the portfolio of</div>
+        <div className={styles.empty} />
         <div className={cx({ role: true, developer: true })}>
-          Frontend Developer{" "}
+          Frontend Developer
         </div>
+        <div className={styles.empty} />
         <div className={styles.intro}>as well as,</div>
+        <div className={styles.empty} />
         <div className={cx({ role: true, filmmaker: true })}>Filmmaker</div>
         <div className={cx({ role: true, designer: true })}>Designer</div>
         <div className={cx({ role: true, writer: true })}>and Writer</div>
+        <div className={styles.empty} />
         <div className={styles.intro}>please enjoy!</div>
       </div>
     </div>

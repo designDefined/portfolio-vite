@@ -10,9 +10,9 @@ $waffle-gradient: linear-gradient(to right, #f0745f 20%, #e79854 80%);
     @include font.background-clip($waffle-gradient);
     @include font.antique;
     display: inline-block;
-    font-size: 54px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 3.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.2em;
     transition: $transition;
     letter-spacing: 2px;
     background-repeat: no-repeat;
@@ -25,13 +25,13 @@ $waffle-gradient: linear-gradient(to right, #f0745f 20%, #e79854 80%);
     transition-delay: 0.75s;
     h3 {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 1.25em;
       letter-spacing: -0.8px;
       margin: 0;
     }
   }
   .content {
-    font-size: 18px;
+    font-size: 1em;
     letter-spacing: -1px;
     font-weight: 300;
     line-height: 1.4em;
