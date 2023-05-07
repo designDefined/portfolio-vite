@@ -8,7 +8,13 @@
   .responsiveContainer {
     background: white;
     width: 100%;
-    max-width: 1023px;
+    max-width: 1103px;
     box-shadow: 0 0 30px 0 rgba(black, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsiveContainer {
+    padding: 10px 40px;
   }
 }
