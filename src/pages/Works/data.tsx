@@ -1,6 +1,10 @@
 import { ReactNode } from "react";
 import WaffleStudioCover from "../../components/Works/Cover/WaffleStudioCover/WaffleStudioCover";
-import { WebgamDetail } from "../../components/Works/DetailContents/DetailContents";
+import {
+  WackathonDetail,
+  WaffleDotComDetail,
+  WebgamDetail,
+} from "../../components/Works/DetailContents/DetailContents";
 
 export type IWorkProcessTag = "개발 중" | "출시 임박" | "출시 완료";
 export type IWorkTypeTag = "Frontend" | "Backend" | "Film" | "Design" | "PM";
@@ -33,12 +37,12 @@ export const works: IWork[] = [
       },
       {
         title: "2023 봄 해커톤 Wackathon:X",
-        content: WebgamDetail,
+        content: WackathonDetail,
         status: { process: "출시 완료", type: ["Frontend", "PM", "Design"] },
       },
       {
         title: "와플닷컴 리뉴얼",
-        content: WebgamDetail,
+        content: WaffleDotComDetail,
         status: { process: "출시 임박", type: ["Frontend"] },
       },
     ],
