@@ -7,11 +7,13 @@ import WorkNavigator from "../../components/Works/WorkNavigator/WorkNavigator";
 export default function Works() {
   return (
     <main className={styles.Works}>
-      <Introduction />
-      <WorkNavigator />
-      {works.map((work) => (
-        <Work key={work.id} work={work} />
-      ))}
+      <div className={styles.responsiveContainer}>
+        <Introduction />
+        <WorkNavigator />
+        {works.map((work) => (
+          <Work key={work.id} work={work} />
+        ))}
+      </div>
     </main>
   );
 }
