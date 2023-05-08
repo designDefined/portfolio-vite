@@ -3,8 +3,11 @@ import {
   WackathonDetail,
   WaffleDotComDetail,
   WebgamDetail,
+  WonderClientDetail,
+  WonderServerDetail,
 } from "../../components/Works/DetailContents/DetailContents";
 import { IWork } from "../../types/workTypes";
+import WonderCover from "../../components/Works/Cover/WonderCover/WonderCover";
 
 function EmptyNode() {
   return <div></div>;
@@ -44,8 +47,21 @@ export const works: IWork[] = [
   },
   {
     id: "wonder",
-    cover: EmptyNode,
-    details: [],
+    cover: WonderCover,
+    details: [
+      {
+        id: "wonderClient",
+        title: "모바일 웹 프론트엔드 개발",
+        content: WonderClientDetail,
+        status: { process: "출시 임박", type: ["Frontend"] },
+      },
+      {
+        id: "wonderServer",
+        title: "서버 개발",
+        content: WonderServerDetail,
+        status: { process: "출시 임박", type: ["Backend"] },
+      },
+    ],
     tags: [],
   },
   {
