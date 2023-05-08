@@ -24,7 +24,9 @@ export default function Introduction() {
         <div className={styles.empty} />
         <div className={cx({ role: true, filmmaker: true })}>Filmmaker</div>
         <div className={cx({ role: true, designer: true })}>Designer</div>
-        <div className={cx({ role: true, writer: true })}>and Writer</div>
+        <div className={cx({ role: true, projectManager: true })}>
+          and Project Manager
+        </div>
         <div className={styles.empty} />
         <div className={styles.intro}>please enjoy!</div>
       </div>
