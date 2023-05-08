@@ -1,8 +1,8 @@
 import styles from "./WorkDetail.module.scss";
-import { IWorkDetail } from "../../../pages/Works/data";
 import { useState } from "react";
 import * as classNames from "classnames/bind";
 import useWaffleScroll from "../../../libs/WaffleScroll/index";
+import { IWorkDetail } from "../../../types/workTypes";
 
 type Props = {
   detail: IWorkDetail;
@@ -45,7 +45,12 @@ export default function WorkDetail({ detail }: Props) {
           {status.process}
         </span>
         {status.type.map((type) => (
-          <span className={cx("type", `${type.toLowerCase()}`)}>{type}</span>
+          <span
+            key={type.toLowerCase()}
+            className={cx("type", `${type.toLowerCase()}`)}
+          >
+            {type}
+          </span>
         ))}
       </div>
       <div className={cx("content")}>{open && <Content />}</div>

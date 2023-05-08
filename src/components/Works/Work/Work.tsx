@@ -1,6 +1,6 @@
 import styles from "./Work.module.scss";
-import { IWork } from "../../../pages/Works/data";
 import WorkDetail from "../WorkDetail/WorkDetail";
+import { IWork } from "../../../types/workTypes";
 
 type Props = {
   work: IWork;
@@ -13,7 +13,7 @@ export default function Work({ work }: Props) {
       <Cover />
       <ul className={styles.detailList}>
         {details.map((detail) => (
-          <WorkDetail detail={detail} />
+          <WorkDetail key={detail.id} detail={detail} />
         ))}
       </ul>
     </div>
