@@ -36,7 +36,7 @@ export default function WonderCover() {
 
       <div className={cx("roles")}>
         <h3>웹 풀스택 개발자</h3>
-        <h3>제 2회 우덕 뉴미디어 프로그램 창업부문 선정</h3>
+        <h3>제 2회 우덕 뉴미디어 프로그램 창작부문 선정</h3>
         <h3>SNUBIZ 창업기금 경진대회 수상</h3>
       </div>
       <div className={cx("content")}>

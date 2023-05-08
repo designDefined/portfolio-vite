@@ -1,3 +1,4 @@
+/*** design ***/
 @mixin background-clip($background) {
   background: $background;
   -webkit-background-clip: text;
@@ -5,11 +6,16 @@
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
-@mixin antique {
-  font-family: "Lobster", cursive;
-}
 @mixin stroke($color: black, $background: white) {
   color: $background;
   text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color,
     1px 1px 0 $color;
+}
+
+/*** font ***/
+@mixin antique {
+  font-family: "Lobster", cursive;
+}
+@mixin ops {
+  font-family: "Black Ops One", cursive;
 }

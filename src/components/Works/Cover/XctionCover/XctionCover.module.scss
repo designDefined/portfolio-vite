@@ -1,0 +1,61 @@
+@use "./src/styles/font";
+
+$transition: 1s cubic-bezier(0.04, 0.03, 0.08, 1);
+$xction-color: rgb(234, 165, 0);
+
+.XctionCover {
+  padding: 10px;
+  .title {
+    @include font.ops;
+    display: inline-block;
+    font-size: 4em;
+    margin-top: 0.7em;
+    margin-bottom: 0.2em;
+    transition: $transition;
+    letter-spacing: -1px;
+    color: white;
+    filter: drop-shadow(0 0 3px $xction-color);
+    opacity: 1;
+    .x {
+      font-size: 1.5em;
+    }
+  }
+  .roles {
+    color: $xction-color;
+    transition: $transition;
+    transition-delay: 0.75s;
+    h3 {
+      font-weight: 700;
+      font-size: 1.25em;
+      letter-spacing: -0.8px;
+      margin: 0;
+    }
+  }
+  .content {
+    font-size: 1.125em;
+    letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-align: justify;
+    transition: $transition;
+    transition-delay: 0.75s;
+    opacity: 1;
+  }
+}
+
+.close {
+  .title {
+    opacity: 0;
+    filter: drop-shadow(0 0 0px $xction-color);
+  }
+  .roles {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition-delay: 0s;
+  }
+  .content {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition-delay: 0s;
+  }
+}

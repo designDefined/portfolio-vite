@@ -8,6 +8,7 @@ import {
 } from "../../components/Works/DetailContents/DetailContents";
 import { IWork } from "../../types/workTypes";
 import WonderCover from "../../components/Works/Cover/WonderCover/WonderCover";
+import XctionCover from "../../components/Works/Cover/XctionCover/XctionCover";
 
 function EmptyNode() {
   return <div></div>;
@@ -41,7 +42,7 @@ export const works: IWork[] = [
   },
   {
     id: "xction",
-    cover: EmptyNode,
+    cover: XctionCover,
     details: [],
     tags: [],
   },
