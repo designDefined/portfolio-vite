@@ -5,6 +5,9 @@ import {
   WebgamDetail,
   WonderClientDetail,
   WonderServerDetail,
+  XctionDevDetail,
+  XctionFilmDetail,
+  XctionPMDetail,
 } from "../../components/Works/DetailContents/DetailContents";
 import { IWork } from "../../types/workTypes";
 import WonderCover from "../../components/Works/Cover/WonderCover/WonderCover";
@@ -43,7 +46,26 @@ export const works: IWork[] = [
   {
     id: "xction",
     cover: XctionCover,
-    details: [],
+    details: [
+      {
+        id: "XctionPM",
+        title: "팀 Xction 프로젝트 총괄",
+        content: XctionPMDetail,
+        status: { process: "출시 임박", type: ["PM"] },
+      },
+      {
+        id: "XctionDev",
+        title: "파일럿 작품 웹 개발팀 리드",
+        content: XctionDevDetail,
+        status: { process: "출시 임박", type: ["Frontend", "Backend"] },
+      },
+      {
+        id: "XctionFilm",
+        title: "파일럿 작품 영상 제작팀 리드",
+        content: XctionFilmDetail,
+        status: { process: "출시 임박", type: ["Film"] },
+      },
+    ],
     tags: [],
   },
   {
