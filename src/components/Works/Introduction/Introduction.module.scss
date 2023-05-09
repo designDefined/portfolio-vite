@@ -27,6 +27,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: 2s ease;
+    transition-delay: 1.5s;
     .intro {
       @include font.antique;
       align-self: center;
@@ -46,6 +48,10 @@
 
       background-size: 300%;
       margin-bottom: 4px;
+
+      transition: 0.75s ease;
+      transition-delay: 2.25s;
+
       &::after {
         position: absolute;
         display: flex;
@@ -99,4 +105,19 @@
   text-fill-color: transparent;
   background-size: 100% auto;
   //animation: textShine 5s ease-in-out infinite alternate;
+  transition: 2s ease;
+}
+
+.close {
+  .gradient {
+    background-position: -75vw 0;
+    opacity: 0;
+  }
+  .Roles {
+    opacity: 0;
+  }
+  .role {
+    transform: translateY(1em);
+    opacity: 0;
+  }
 }

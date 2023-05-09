@@ -1,11 +1,19 @@
 import styles from "./Introduction.module.scss";
 import classNames from "classnames/bind";
+import useWaffleScroll from "../../../libs/WaffleScroll/index";
 
 const cx = classNames.bind(styles);
 
 export default function Introduction() {
+  const { ref, scrollState } = useWaffleScroll<{ open: boolean }>(
+    ({ toggleState }) => {
+      toggleState(0.8, 3.1, "open");
+    },
+    { open: false },
+  );
+
   return (
-    <div className={styles.Introduction}>
+    <div className={cx("Introduction", { close: !scrollState.open })} ref={ref}>
       <div className={styles.Title}>
         <div className={styles.gradient}>Design</div>
         <div className={styles.gradient}>Defined.by</div>
