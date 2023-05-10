@@ -12,7 +12,6 @@
     opacity: 0;
     text-align: center;
     font-size: 3em;
-    box-shadow: 0 0 2px 0 rgba(black, 0.2);
   }
 
   .header {
@@ -23,9 +22,9 @@
     text-align: center;
     top: 0;
     box-shadow: 0 0 2px 0 rgba(black, 0.2);
-    background: white;
+    background: rgba(white, 1);
     z-index: 999;
-    transition: 1s ease font-size;
+    transition: 1s ease font-size, 1s ease background-color;
   }
 }
 
@@ -36,5 +35,6 @@
   .header {
     opacity: 0;
     font-size: 3em;
+    background-color: rgba(white, 0);
   }
 }
