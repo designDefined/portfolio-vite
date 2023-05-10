@@ -1,6 +1,40 @@
 .WorkNavigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 80px 0;
-  font-size: 3em;
-  text-align: center;
+  font-weight: 700;
+
+  .static {
+    width: 100%;
+
+    opacity: 0;
+    text-align: center;
+    font-size: 3em;
+    box-shadow: 0 0 2px 0 rgba(black, 0.2);
+  }
+
+  .header {
+    width: 100%;
+    position: fixed;
+    font-size: 1em;
+    padding: 0 2px;
+    text-align: center;
+    top: 0;
+    box-shadow: 0 0 2px 0 rgba(black, 0.2);
+    background: white;
+    z-index: 999;
+    transition: 1s ease font-size;
+  }
+}
+
+.close {
+  .static {
+    opacity: 1;
+  }
+  .header {
+    opacity: 0;
+    font-size: 3em;
+  }
 }
